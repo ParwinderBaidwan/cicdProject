@@ -16,8 +16,8 @@ console.log("app is running");
 console.log(new Date());
 console.log("adding after edit in browser");
 // npm i express , npm i pm2 -g
-const app = require('express');
-app.length("/", (req,res) => {
+const app = require('express')();
+app.get("/", (req,res) => {
     res.json({message : "cicd server g13 running"});
 })
 app.listen(3000, ()=>{
