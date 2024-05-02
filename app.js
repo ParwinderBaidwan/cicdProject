@@ -14,3 +14,12 @@
 
 console.log("app is running");
 console.log(new Date());
+console.log("adding after edit in browser");
+// npm i express , npm i pm2 -g
+const app = require('express');
+app.length("/", (req,res) => {
+    res.json({message : "cicd server g13 running"});
+})
+app.listen(3000, ()=>{
+    console.log("server is running on 3000");
+})
